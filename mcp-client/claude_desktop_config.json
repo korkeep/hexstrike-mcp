@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "mcp-kali-server": {
+      "command": "python3",
+      "args": [
+        "[project install path]\\mcp-client\\client.py",
+        "--server",
+        "http://[kali-ip]:5000/"
+      ],
+      "description": "MCP Kali Server",
+      "timeout": 300
+    },
+    "hexstrike-ai": {
+      "command": "python3",
+      "args": [
+        "[project install path]\\mcp-client\\hexstrike_mcp.py",
+        "--server",
+        "http://[kali-ip]:8888/"
+      ],
+      "description": "Hexstrike Server",
+      "timeout": 300
+    }
+  }
+}
